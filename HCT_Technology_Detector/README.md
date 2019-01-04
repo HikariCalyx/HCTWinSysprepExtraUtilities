@@ -17,6 +17,8 @@ Run detect.bat with the method as you want.
 
 Remember to add commands that you're going to add.
 
+You may want to read documents about unattend or $OEM$. 
+
 ## HCT 制程检测工具 中文
 
 本工具的目的是，检测你当前要安装的操作系统是否符合要求的制程。
