@@ -1,5 +1,23 @@
 # HCT Technology Detector
-## HCT 制程检测工具
+
+The purpose is to stop "technicians" to install Windows 7 on PC with Intel Kaby Lake processors.
+
+Supported OS: Windows XP Service Pack 3 or newer.
+
+Extra apps: 
+
+CPU-Z: https://www.cpuid.com/softwares/cpu-z.html
+
+PECMD: Provided in the repository
+
+Usage:
+
+Put cpuz.ini, cpuz_x32.exe, cpuz_x64.exe, pecmd.exe and detect.bat together.
+Run detect.bat with the method as you want.
+
+Remember to add commands that you're going to add.
+
+## HCT 制程检测工具 中文
 
 本工具的目的是，检测你当前要安装的操作系统是否符合要求的制程。
 
