@@ -39,18 +39,18 @@ if %technol% geq %tn_line_new% goto suitable
 pause>nul
 
 :unsuitable
-if %technol% gtr %tn_line_old% pecmd mess 此计算机因为年代久远，不适合运行 Windows 7。\n制程 %technol% nm。\n15 秒后安装程序将强行终止。@HCT 制程判断程序 *10000
-if %technol% lss %tn_line_new% pecmd mess 此计算机因为太新了，不适合运行 Windows 7。\n制程 %technol% nm。\n15 秒后安装程序将强行终止。\n\n我们建议您在此机器安装 Windows 10 使用。@HCT 制程判断程序 *10000
+if %technol% gtr %tn_line_old% pecmd mess This PC is too old to run Windows 7.\nLitography: %technol% nm.\nThe installation will be terminated in 15 seconds.@HCT Technology Detector *15000
+if %technol% lss %tn_line_new% pecmd mess This PC is too new to run Windows 7.\nLitography: %technol% nm.\nThe installation will be terminated in 15 seconds.\n\nWe recommend you to install Windows 10 instead.@HCT Technology Detector *15000
 rem add required command here
-pecmd shut r
+rem pecmd shut r
 exit
 
 :suitable
-pecmd mess 此计算机可以运行 Windows 7。\n制程 %technol% nm。\n\n15 秒后安装程序将继续。@HCT 制程判断程序 *10000
+pecmd mess This PC can run Windows 7.\nLitography: %technol% nm.\n\nThe installation will proceed in 15 seconds.@HCT Technology Detector *15000
 rem add required command here
 exit
 
 :vm_skip
-pecmd mess 检测到虚拟机。\n\n15 秒后安装程序将继续。@HCT 制程判断程序 *10000
+pecmd mess Virtual Machine detected.\n\nThe installation will proceed in 15 seconds.@HCT Technology Detector *15000
 rem add required command here
 exit
