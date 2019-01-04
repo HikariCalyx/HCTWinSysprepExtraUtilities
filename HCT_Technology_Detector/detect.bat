@@ -16,10 +16,10 @@ echo X86 Processor detected
 cpuz_x32 -txt=output
 
 :vm_judgement
-findstr "VMware" output.txt > vm.txt
-findstr "VirtualBox" output.txt > vm.txt
-findstr "Virtual Machine" output.txt > vm.txt
-findstr "Parallels" output.txt > vm.txt
+findstr "VMware" output.txt >> vm.txt
+findstr "VirtualBox" output.txt >> vm.txt
+findstr /C:"Virtual Machine" output.txt >> vm.txt
+findstr "Parallels" output.txt >> vm.txt
 set /p vm_detect=<vm.txt
 del vm.txt
 if "%vm_detect%"=="" (echo This is not a virtual machine.) else goto vm_skip
