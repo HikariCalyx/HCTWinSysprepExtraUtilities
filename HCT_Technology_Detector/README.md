@@ -13,7 +13,7 @@ CPU-Z：https://www.cpuid.com/softwares/cpu-z.html
 PECMD：此程序在任意一个第三方定制 PE 里均可找到
 
 
-使用方法：略。
+使用方法：~~略。~~detect.bat 应该看得懂吧。
 
 
 Credits：
